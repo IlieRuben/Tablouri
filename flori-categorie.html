@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+    <html lang="ro">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Categorie Flori - DavidGift</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+        
+         <div class="header-top">
+          <div class="container">
+            <div class="contact-info">
+              <span><i class="fas fa-phone-alt"></i> 07xx xxx xxx</span>
+              <span><i class="fas fa-envelope"></i> contact@davidgift.ro</span>
+            </div>
+            <div class="user-actions">
+              <a href="#"><i class="fas fa-user"></i> Contul meu</a>
+              <a href="#"><i class="fas fa-heart"></i> Favorite</a>
+              <a href="#"><i class="fas fa-shopping-cart"></i> Coșul meu (0)</a>
+            </div>
+          </div>
+        </div>
+        <div class="header-main">
+          <div class="container">
+            <div class="logo">
+              <a href="/">DavidGift</a>
+            </div>
+            <div class="search-container">
+               <input type="text" placeholder="Cauta tabloul dorit...">
+               <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+        <nav class="main-navigation">
+          <div class="container">
+             <ul>
+              <li><a href="index.html#home">Acasă</a></li>
+              <li><a href="despre-noi.html">Despre Noi</a></li>
+              <li class="dropdown-container">
+                <a href="javascript:void(0);">Tablouri Personalizate <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="produse.html?categorie=sclipici">Tablouri Personalizate cu Sclipici</a></li>
+                  <li><a href="produse.html?categorie=color-sclipici">Tablouri Personalizate Color cu Sclipici</a></li>
+                  <li><a href="produse.html?categorie=praf-stele">Tablouri Personalizate cu Praf de Stele</a></li>
+                  <li><a href="produse.html?categorie=canvas-color">Tablouri Personalizate Canvas Color</a></li>
+                  <li><a href="produse.html?categorie=digital">Tablouri Personalizate Digitale</a></li>
+                  <li><a href="produse.html?categorie=canvas-3piese">Tablouri Personalizate Canvas 3 Piese</a></li>
+                  <li><a href="produse.html?categorie=skymap">Tablouri Personalizate SkyMap</a></li>
+                  <li><a href="produse.html?categorie=logo">Tablouri Personalizate Logo</a></li>
+                  <li><a href="produse.html?categorie=creion">Tablouri Personalizate Desen Creion</a></li>
+                  <li><a href="produse.html?categorie=siluete">Tablouri Personalizate Siluete</a></li>
+                </ul>
+              </li>
+              <li><a href="gender-reveal.html">Gender Reveal</a></li>
+              <li><a href="evenimente.html">Evenimente</a></li>
+              <li><a href="flori.html" class="active">Flori</a></li>
+              <li><a href="index.html#promotions">Promotii</a></li>
+              <li><a href="index.html#blog-preview">Blog</a></li>
+              <li><a href="index.html#faq">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main class="flori-categorie-page-content">
+          <section class="flori-listing-section">
+              <div class="container flori-main-layout">
+            
+                  <aside class="flori-sidebar">
+                
+                      <div class="filter-widget price-filter">
+                          <div class="price-filter-toggle">
+                              <input type="checkbox" id="price-toggle-checkbox">
+                              <label for="price-toggle-checkbox">
+                                  <span class="checkbox-custom"></span> Filtru Preț <i class="fas fa-chevron-down"></i>
+                              </label>
+                          </div>
+                          <div class="filter-content price-options-list" id="price-options-list">
+                              <ul>
+                                  <li><label><input type="radio" name="price_filter" value="all" checked> Toate</label></li>
+                                  <li><label><input type="radio" name="price_filter" value="200-250"> 200 lei - 250 lei</label></li>
+                                  <li><label><input type="radio" name="price_filter" value="250-300"> 250 lei - 300 lei</label></li>
+                                  <li><label><input type="radio" name="price_filter" value="300-350"> 300 lei - 350 lei</label></li>
+                                  <li><label><input type="radio" name="price_filter" value="350-400"> 350 lei - 400 lei</label></li>
+                                  <li><label><input type="radio" name="price_filter" value="400-450"> 400 lei - 450 lei</label></li>
+                                  <li><label><input type="radio" name="price_filter" value="450-500"> 450 lei - 500 lei</label></li>
+                                  <li><label><input type="radio" name="price_filter" value="500-550"> 500 lei - 550 lei</label></li>
+                                  <li><label><input type="radio" name="price_filter" value="550-600"> 550 lei - 600 lei</label></li>
+                                  <li><label><input type="radio" name="price_filter" value="600+"> 600 lei +</label></li>
+                              </ul>
+                          </div>
+                      </div>
+                 
+                      <div class="filter-widget category-filter-list">
+                           <h4>Categorii Flori</h4>
+                           <ul id="flori-category-list-sidebar">
+                               <li><a href="flori-categorie.html?tip=aranjamente">Aranjamente <span class="category-count">2</span></a></li>
+                               <li><a href="flori-categorie.html?tip=buchete">Buchete <span class="category-count">9</span></a></li>
+                               <li><a href="flori-categorie.html?tip=plante">Plante <span class="category-count">2</span></a></li>
+                               <li><a href="flori-categorie.html?tip=criogenati">Trandafiri Criogenați <span class="category-count">6</span></a></li>
+                           </ul>
+                      </div>
+                  </aside>
+
+                  <div class="flori-content-area">
+                      <div class="product-listing-header">
+                          <p class="results-count"><span id="flori-results-count">0</span> rezultate</p>
+                          <div class="sort-options">
+                              <label for="sort-by">Sortează după:</label>
+                              <select id="sort-by" name="sort-by">
+                                  <option value="default">Sortare implicită</option>
+                                  <option value="popularity">Popularitate</option>
+                                  <option value="rating">Medie recenzie</option>
+                                  <option value="latest">Cele mai noi</option>
+                                  <option value="price-asc">Preț: crescător</option>
+                                  <option value="price-desc">Preț: descrescător</option>
+                              </select>
+                          </div>
+                      </div>
+
+                      <div class="product-grid-flowers" id="flori-product-grid">
+                          <p>Se încarcă produsele...</p>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+         
+          <div id="flower-order-panel" class="event-order-panel hidden">
+              <button id="close-flower-panel-btn" class="panel-close-button" aria-label="Închide Panou">&times;</button>
+              <div class="panel-content">
+                  <h3 id="flower-panel-title">Detalii Produs</h3>
+                  <div class="flower-panel-images">
+                      <img id="flower-panel-img1" src="https://via.placeholder.com/150x120/eee/ccc?text=+" alt="Imagine Produs 1">
+                      <img id="flower-panel-img2" src="https://via.placeholder.com/150x120/eee/ccc?text=+" alt="Imagine Produs 2">
+                  </div>
+                  <div class="product-price-range">
+                      <span id="flower-panel-price-range">0.00 lei - 0.00 lei</span> <small>(TVA inclus)</small>
+                  </div>
+                   <p class="product-short-description" id="flower-panel-desc">Descriere...</p>
+
+                  <form id="flower-panel-form">
+                      <h4>Alege Pachetul:</h4>
+                      <div class="radio-group package-options" id="flower-package-options">
+                    
+                      </div>
+
+                      <div class="product-final-price">
+                          Preț Selectat:
+                          <span class="price-value"><span id="flower-final-price-value">0.00</span> RON</span>
+                      </div>
+
+                      <button type="button" id="flower-buy-now-btn" class="buy-now-button">Adaugă în Coș</button>
+                  </form>
+
+                   <div class="product-share">
+                      <span>Distribuie:</span>
+                      <a href="#" class="share-btn facebook" aria-label="Distribuie pe Facebook"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="share-btn instagram" aria-label="Distribuie pe Instagram"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="share-btn pinterest" aria-label="Distribuie pe Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                      <a href="#" class="share-btn whatsapp" aria-label="Distribuie pe WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                  </div>
+                   <div class="product-meta">
+                      <span>Etichete: <span id="flower-panel-tags">N/A</span></span>
+                  </div>
+              </div>
+          </div>
+          <div id="flower-panel-overlay" class="panel-overlay hidden"></div>
+      </main>
+
+      <footer>
+      
+         <div class="footer-main">
+          <div class="container">
+            <div class="footer-col">
+              <h4>Informatii Utile</h4>
+              <ul>
+                <li><a href="#">Despre Noi (DavidGift)</a></li>
+                <li><a href="#">Termeni si Conditii</a></li>
+                <li><a href="#">Politica de Confidentialitate</a></li>
+                <li><a href="#">Politica Cookies</a></li>
+                <li><a href="#">ANPC</a></li>
+                <li><a href="#">SOL</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Comenzi și Cont</h4>
+              <ul>
+                 <li><a href="#">Cum Comand?</a></li>
+                <li><a href="#">Contul Meu</a></li>
+                <li><a href="#">Istoric Comenzi</a></li>
+                <li><a href="#">Lista de Dorinte</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Servicii Clienti</h4>
+              <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Livrare si Plata</a></li>
+                <li><a href="#">Retur Produse</a></li>
+                <li><a href="#">Intrebari Frecvente (FAQ)</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Newsletter DavidGift</h4>
+              <p>Idei și oferte exclusive direct în inbox:</p>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Adresa ta de email">
+                <button type="submit">Abonare</button>
+              </form>
+              <h4>Urmareste-ne</h4>
+              <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <p>&copy; 2024 DavidGift. Toate drepturile rezervate.</p>
+            <div class="payment-methods">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <img src="https://via.placeholder.com/40x25/eee/000?text=Pay" alt="Payment" style="height: 25px; vertical-align: middle; margin-left: 5px;">
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+    </body>
+    </html>

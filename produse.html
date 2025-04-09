@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+    <html lang="ro">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Detalii Produs - DavidGift</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+        
+         <div class="header-top">
+          <div class="container">
+            <div class="contact-info">
+              <span><i class="fas fa-phone-alt"></i> 07xx xxx xxx</span>
+              <span><i class="fas fa-envelope"></i> contact@davidgift.ro</span>
+            </div>
+            <div class="user-actions">
+              <a href="#"><i class="fas fa-user"></i> Contul meu</a>
+              <a href="#"><i class="fas fa-heart"></i> Favorite</a>
+              <a href="#"><i class="fas fa-shopping-cart"></i> Coșul meu (0)</a>
+            </div>
+          </div>
+        </div>
+        <div class="header-main">
+          <div class="container">
+            <div class="logo">
+              <a href="/">DavidGift</a>
+            </div>
+            <div class="search-container">
+               <input type="text" placeholder="Cauta tabloul dorit...">
+               <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+        <nav class="main-navigation">
+          <div class="container">
+             <ul>
+              <li><a href="index.html#home">Acasă</a></li>
+              <li><a href="despre-noi.html">Despre Noi</a></li>
+              <li class="dropdown-container">
+                <a href="javascript:void(0);" class="active">Tablouri Personalizate <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="produse.html?categorie=sclipici">Tablouri Personalizate cu Sclipici</a></li>
+                  <li><a href="produse.html?categorie=color-sclipici">Tablouri Personalizate Color cu Sclipici</a></li>
+                  <li><a href="produse.html?categorie=praf-stele">Tablouri Personalizate cu Praf de Stele</a></li>
+                  <li><a href="produse.html?categorie=canvas-color">Tablouri Personalizate Canvas Color</a></li>
+                  <li><a href="produse.html?categorie=digital">Tablouri Personalizate Digitale</a></li>
+                  <li><a href="produse.html?categorie=canvas-3piese">Tablouri Personalizate Canvas 3 Piese</a></li>
+                  <li><a href="produse.html?categorie=skymap">Tablouri Personalizate SkyMap</a></li>
+                  <li><a href="produse.html?categorie=logo">Tablouri Personalizate Logo</a></li>
+                  <li><a href="produse.html?categorie=creion">Tablouri Personalizate Desen Creion</a></li>
+                  <li><a href="produse.html?categorie=siluete">Tablouri Personalizate Siluete</a></li>
+                </ul>
+              </li>
+               <li><a href="gender-reveal.html">Gender Reveal</a></li>
+               <li><a href="evenimente.html">Evenimente</a></li>
+              <li><a href="index.html#promotions">Promotii</a></li>
+              <li><a href="index.html#blog-preview">Blog</a></li>
+              <li><a href="index.html#faq">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main class="product-page-content">
+           <section class="product-detail-section">
+              <div class="container">
+                  <div class="product-display-grid">
+                      <div class="product-image-main">
+                          <img id="product-image-main" src="https://via.placeholder.com/600x500/eee/ccc?text=Loading..." alt="Imagine Produs">
+                      </div>
+                      <div class="product-info-main">
+                          <h1 id="product-title-main">Nume Produs...</h1>
+                          <div class="product-rating">
+                              <div class="stars" id="product-stars">
+                              </div>
+                              <span class="review-count">(<span id="product-review-count">0</span> recenzii)</span>
+                          </div>
+
+                          <div class="product-price-main">
+                              <span id="product-price-value-main">0.00</span> RON
+                              <small>(TVA inclus)</small>
+                          </div>
+                          <div class="product-short-description" id="product-short-desc">
+                              Scurtă descriere a produsului va apărea aici
+                          </div>
+
+                          <form class="product-options-form" id="product-options-form">
+                              <div class="option-group">
+                                  <label for="product-dimension-select">Dimensiune:</label>
+                                  <select id="product-dimension-select" name="dimensiune">
+                                   
+                                  </select>
+                              </div>
+                              <div class="option-group">
+                                  <label for="product-persons-select">Nr. Persoane (dacă e cazul):</label>
+                                  <select id="product-persons-select" name="persoane">
+                                      <option value="0" data-price-modifier="0">N/A</option>
+                                      <option value="1" data-price-modifier="0">1 Persoană</option>
+                                      <option value="2" data-price-modifier="30">2 Persoane (+30 RON)</option>
+                                      <option value="3" data-price-modifier="60">3 Persoane (+60 RON)</option>
+                                      <option value="4" data-price-modifier="90">4+ Persoane (+90 RON)</option>
+                                  </select>
+                              </div>
+                               <div class="option-group">
+                                  <label for="product-color-select">Culoare Ramă (opțional):</label>
+                                  <select id="product-color-select" name="culoare_rama">
+                                      <option value="standard" data-price-modifier="0">Standard (Negru/Alb)</option>
+                                      <option value="gold" data-price-modifier="25">Auriu (+25 RON)</option>
+                                      <option value="silver" data-price-modifier="25">Argintiu (+25 RON)</option>
+                                      <option value="wood" data-price-modifier="35">Lemn Natur (+35 RON)</option>
+                                  </select>
+                              </div>
+                              <p class="processing-time"><i class="fas fa-hourglass-half"></i> Termen de realizare: <span id="product-processing-time">3-5</span> zile lucrătoare</p>
+
+                              <div class="option-group file-upload-group">
+                                  <label for="product-file-upload">Încarcă Fotografia:</label>
+                                  <input type="file" id="product-file-upload" name="photo" accept="image/png, image/jpeg, image/heic" required>
+                                  <small>Formate: JPG, PNG, HEIC. Max: 10MB. Calitate cât mai bună.</small>
+                              </div>
+
+                              <div class="option-group">
+                                  <label for="product-observations">Text / Observații Speciale:</label>
+                                  <textarea id="product-observations" name="observatii" rows="3" placeholder="Adaugă textul dorit pe tablou sau orice alte indicații..."></textarea>
+                              </div>
+
+                              <div class="option-group product-kit-option">
+                                  <label>
+                                      <input type="checkbox" id="product-kit-checkbox" name="kit" value="50" data-price-modifier="50">
+                                      Adaugă Kit Premium de Agățare (+50 RON)
+                                  </label>
+                                  <small>Include sistem de prindere profesional și instrucțiuni.</small>
+                              </div>
+
+                              <button type="button" id="reset-options-btn" class="reset-button">Resetează Alegerile</button>
+
+                              <div class="product-final-price">
+                                  Preț Final (TVA inclus):
+                                  <span class="price-value"><span id="product-final-price-value">0.00</span> RON</span>
+                              </div>
+
+                              <button type="submit" id="buy-now-btn" class="buy-now-button">
+                                  <i class="fas fa-shopping-cart"></i> Cumpără Acum
+                              </button>
+                          </form>
+
+                          <div class="product-share">
+                              <span>Distribuie:</span>
+                              <a href="#" class="share-btn facebook" aria-label="Distribuie pe Facebook"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#" class="share-btn instagram" aria-label="Distribuie pe Instagram"><i class="fab fa-instagram"></i></a>
+                              <a href="#" class="share-btn pinterest" aria-label="Distribuie pe Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                              <a href="#" class="share-btn whatsapp" aria-label="Distribuie pe WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <section class="product-accordion-section">
+              <div class="container">
+                  <div class="product-accordion">
+                      <details class="accordion-item" open>
+                          <summary>Descriere Produs</summary>
+                          <div class="accordion-content" id="accordion-descriere">
+                              Conținutul va fi încărcat...
+                          </div>
+                      </details>
+                      <details class="accordion-item">
+                          <summary>Caracteristici</summary>
+                           <div class="accordion-content" id="accordion-caracteristici">
+                               Conținutul va fi încărcat...
+                          </div>
+                      </details>
+                      <details class="accordion-item">
+                          <summary>Informații Suplimentare</summary>
+                           <div class="accordion-content" id="accordion-info">
+                               Conținutul va fi încărcat...
+                          </div>
+                      </details>
+                       <details class="accordion-item">
+                          <summary>Întrebări Frecvente Specifice</summary>
+                           <div class="accordion-content" id="accordion-faq">
+                               Conținutul va fi încărcat...
+                          </div>
+                      </details>
+                       <details class="accordion-item">
+                          <summary>Recenzii Clienți</summary>
+                           <div class="accordion-content" id="accordion-recenzii">
+                               Conținutul va fi încărcat...
+                          </div>
+                      </details>
+                  </div>
+              </div>
+          </section>
+
+          <section class="product-meta-section">
+              <div class="container">
+                  <div class="product-meta">
+                      <span>Categorie: <a href="#" id="meta-categorie">N/A</a></span>
+                      <span>Etichete: <a href="#">personalizat</a>, <a href="#" id="meta-eticheta1">tablou</a>, <a href="#" id="meta-eticheta2">cadou</a></span>
+                  </div>
+              </div>
+          </section>
+
+          <section class="related-products-section">
+              <div class="container">
+                  <h2>Produse Asemănătoare</h2>
+                  <div class="product-grid" id="related-products-grid">
+                      <div class="product-card">
+                        <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300/eee/333?text=Similar+1" alt="Produs Similar 1">
+                        <div class="product-overlay">
+                            <a href="#" class="quick-view" aria-label="Vizualizare Rapida"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="add-to-wishlist" aria-label="Adauga la Favorite"><i class="fas fa-heart"></i></a>
+                        </div>
+                        </div>
+                        <div class="product-info">
+                        <h3 class="product-title"><a href="#">Alt Tablou Personalizat</a></h3>
+                        <p class="product-price">230,00 RON</p>
+                        <button class="add-to-cart-btn">Vezi Detalii</button>
+                        </div>
+                    </div>
+                     <div class="product-card">
+                        <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300/ddd/333?text=Similar+2" alt="Produs Similar 2">
+                        <div class="product-overlay">
+                            <a href="#" class="quick-view" aria-label="Vizualizare Rapida"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="add-to-wishlist" aria-label="Adauga la Favorite"><i class="fas fa-heart"></i></a>
+                        </div>
+                        </div>
+                        <div class="product-info">
+                        <h3 class="product-title"><a href="#">Cadou Special Canvas</a></h3>
+                        <p class="product-price">199,00 RON</p>
+                        <button class="add-to-cart-btn">Vezi Detalii</button>
+                        </div>
+                    </div>
+                     <div class="product-card">
+                        <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300/ccc/333?text=Similar+3" alt="Produs Similar 3">
+                        <div class="product-overlay">
+                            <a href="#" class="quick-view" aria-label="Vizualizare Rapida"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="add-to-wishlist" aria-label="Adauga la Favorite"><i class="fas fa-heart"></i></a>
+                        </div>
+                        </div>
+                        <div class="product-info">
+                        <h3 class="product-title"><a href="#">Tablou Decorativ Modern</a></h3>
+                        <p class="product-price">275,50 RON</p>
+                        <button class="add-to-cart-btn">Vezi Detalii</button>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </section>
+
+      </main>
+
+      <footer>
+         <div class="footer-main">
+          <div class="container">
+            <div class="footer-col">
+              <h4>Informatii Utile</h4>
+              <ul>
+                <li><a href="#">Despre Noi (DavidGift)</a></li>
+                <li><a href="#">Termeni si Conditii</a></li>
+                <li><a href="#">Politica de Confidentialitate</a></li>
+                <li><a href="#">Politica Cookies</a></li>
+                <li><a href="#">ANPC</a></li>
+                <li><a href="#">SOL</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Comenzi și Cont</h4>
+              <ul>
+                 <li><a href="#">Cum Comand?</a></li>
+                <li><a href="#">Contul Meu</a></li>
+                <li><a href="#">Istoric Comenzi</a></li>
+                <li><a href="#">Lista de Dorinte</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Servicii Clienti</h4>
+              <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Livrare si Plata</a></li>
+                <li><a href="#">Retur Produse</a></li>
+                <li><a href="#">Intrebari Frecvente (FAQ)</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Newsletter DavidGift</h4>
+              <p>Idei și oferte exclusive direct în inbox:</p>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Adresa ta de email">
+                <button type="submit">Abonare</button>
+              </form>
+              <h4>Urmareste-ne</h4>
+              <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <p>&copy; 2024 DavidGift. Toate drepturile rezervate.</p>
+            <div class="payment-methods">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <img src="https://via.placeholder.com/40x25/eee/000?text=Pay" alt="Payment" style="height: 25px; vertical-align: middle; margin-left: 5px;">
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+    </body>
+    </html>
